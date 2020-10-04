@@ -1,3 +1,5 @@
+Fork to make GDBrowser look more similar to GD.
+
 # GDBrowser
 
 Uh... so I've never actually used GitHub before this. But I'll try to explain everything going on here.
