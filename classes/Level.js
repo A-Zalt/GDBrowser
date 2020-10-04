@@ -48,7 +48,7 @@ class Level {
         else if (levelInfo[25] > 0) this.difficulty = 'Auto';
         this.difficultyFace = `${levelInfo[17] != 1 ? this.difficulty.toLowerCase() : `demon-${this.difficulty.toLowerCase().split(' ')[0]}`}${this.epic ? '-epic' : `${this.featured ? '-featured' : ''}`}`
 
-        if (this.password && this.password != 0) {
+        if (this.password) {
             let xor = new XOR();
             let pass = config.xorPasswords ? xor.decrypt(this.password, 26364) : this.password;
             if (pass.length > 1) this.password = pass.slice(1);
